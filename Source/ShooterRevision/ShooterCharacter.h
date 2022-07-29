@@ -51,8 +51,16 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Projectile, meta = (AllowPrivateAccess = "true"))
 		FVector MuzzleOffset;
 
-	UPROPERTY(EditDefaultsOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, Category = Projectile, meta = (AllowPrivateAccess = "true"))
 		TSubclassOf<class AShooterProjectile> ProjectileClass;
+	
+	// TEMP: WILL CHANGE LATER
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Weapon, meta = (AllowPrivateAccess = "true"))
+		class USoundCue* FireSound;
+
+	// TEMP: WILL CHANGE LATER
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Weapon, meta = (AllowPrivateAccess = "true"))
+		class UParticleSystem* MuzzleFlash;
 
 public:
 
