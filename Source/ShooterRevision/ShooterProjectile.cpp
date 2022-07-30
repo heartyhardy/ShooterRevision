@@ -42,31 +42,15 @@ AShooterProjectile::AShooterProjectile()
 	if (!ProjectileMesh)
 	{
 		ProjectileMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMeshComponent"));
-		//static ConstructorHelpers::FObjectFinder<UStaticMesh>Mesh(TEXT("StaticMesh'/Game/ParagonLtBelica/FX/Meshes/Heroes/SM_PlasmaShot_Shell.SM_PlasmaShot_Shell'"));
-
-		//if (Mesh.Succeeded())
-		//{
-		//	ProjectileMesh->SetStaticMesh(Mesh.Object);
-		//}
-
-		//static ConstructorHelpers::FObjectFinder<UMaterial>Material(TEXT("Material'/Game/_Game/Assets/Materials/Projectiles/MAT_DefaultProjectile.MAT_DefaultProjectile'"));
-
-		//if (Material.Succeeded())
-		//{
-		//	ProjectileMaterialInstance = UMaterialInstanceDynamic::Create(Material.Object, ProjectileMesh);
-		//}
-
-		//ProjectileMesh->SetMaterial(0, ProjectileMaterialInstance);
 
 		if (ProjectileMesh)
 		{
-			ProjectileMesh->SetRelativeScale3D(FVector(0.05f, 0.05f, 0.05f));
+			ProjectileMesh->SetRelativeScale3D(FVector(0.09f, 0.09f, 0.09f));
 			ProjectileMesh->SetupAttachment(RootComponent);
 		}
 	}
 
 	InitialLifeSpan = 3.0f;
-
 }
 
 // Called when the game starts or when spawned
