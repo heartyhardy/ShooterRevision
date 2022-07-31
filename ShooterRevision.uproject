@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.0",
+	"EngineAssociation": "{5FA3A71B-4EF4-0242-2016-18BF37726F1B}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -41,6 +41,15 @@
 		{
 			"Name": "LiveLinkControlRig",
 			"Enabled": true
+		},
+		{
+			"Name": "AppleARKitFaceSupport",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"IOS",
+				"Win64",
+				"Mac"
+			]
 		}
 	]
 }
